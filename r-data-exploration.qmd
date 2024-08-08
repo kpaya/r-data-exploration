@@ -1,0 +1,37 @@
+---
+title: "r-data-exploration"
+author: "Karol Paya"
+format: html
+editor_options: 
+  chunk_output_type: console
+---
+```{r}
+#Loading Libraries
+library(tidyverse)
+library(skimr)
+library(GGally)
+```
+
+```{r}
+#View Data
+names(diamonds)
+dim(diamonds)
+summary(diamonds)
+head(diamonds)
+tail(diamonds)
+skimr::skim(diamonds)
+```
+
+
+```{r}
+# Make a pairplot
+GGally::ggpairs(diamonds)
+```
+
+```{r}
+# Make a histogram
+ggplot(data = diamonds, aes(x = carat)) +
+  geom_histogram()
+```
+
+
