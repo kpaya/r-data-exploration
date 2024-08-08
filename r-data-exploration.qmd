@@ -32,6 +32,7 @@ GGally::ggpairs(diamonds)
 # Make a histogram
 ggplot(data = diamonds, aes(x = carat)) +
   geom_histogram()
+
 ```
 
 
